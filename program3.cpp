@@ -1,17 +1,19 @@
-
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n;
+    int N;
 
-    cout << "Enter a number: ";
-    cin >> n;
+    cout << "Enter N: ";
+    cin >> N;
 
-    for(int i = 1; i <= 10; i++)
+    for (int i = 1; i <= N; i++)
     {
-        cout << n << " x " << i << " = " << n*i << endl;
+        if (i % 3 == 0 || i % 5 == 0)
+        {
+            cout << i << " ";
+        }
     }
 
     return 0;

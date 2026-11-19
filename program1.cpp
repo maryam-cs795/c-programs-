@@ -1,14 +1,16 @@
-
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int sum = 0;
+    int N, sum = 0;
 
-    for(int i = 1; i <= 50; i += 2)
+    cout << "Enter N: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++)
     {
-        sum = sum + i;
+        sum = sum + i * i;
     }
 
     cout << "Sum = " << sum;
